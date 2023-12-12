@@ -4,3 +4,46 @@
 /* 
 * Add your own CSS code below... 
 */
+html{
+    font-size: 10px;
+}
+
+/* Container */
+nav.nav-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img.logo{
+    order: 1;
+    margin-top: 1.5rem;
+}
+ul.nav-items{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 1.7rem;
+
+}
+.nav-items li{
+    padding: 1.5rem;
+    color: #0050EE;
+}
+
+hr.nav-bottom-line{
+    flex-basis: 100%;
+    height: 0.1rem;
+    border-color: rgba(0, 0, 0, 0.199);
+}
+
+
+
+
+
+
+
+
+
+img.logo{
+    border-radius: 100%;
+}
