@@ -118,18 +118,19 @@ main{
 }
 
 /* subscribe form */
-
 .subscribe{
     display: flex;
     height: 7rem;
     align-items: center;
+    
 }
 .text-form{
     display: flex;
     align-items: center;
+    margin-left: 7rem;
 }
 .fa-envelope{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .text-form p{
     font-size: 1.4rem;
@@ -140,4 +141,39 @@ main{
     margin-right: 5rem;
     gap: 1rem;
 }
-
+.blog-thumb{
+    height: 12rem;
+    width: 100%;
+}
+.featured-content{
+    display: flex;
+    gap: 2rem;
+}
+.featured-content__item{
+    flex-basis: 25%;
+    margin-top: 2.5rem;
+}
+.featured-content__item h2{
+    margin-top: 1rem;
+    color: rgb(56, 191, 211);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.article-p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 100%;
+}
+.date-read{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+.date-read h3{
+    color: gray;
+}
+.date-read a{
+    color: rgb(56, 190, 211);
+}
