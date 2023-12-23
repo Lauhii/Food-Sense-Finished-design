@@ -96,13 +96,13 @@ p{
 /* main css  */
 
 main{
-    margin-left: -4rem;
     flex-basis: 70%;
     margin-top: 3rem;
 }
 .hero-img{
     width: 100%;
-    height: 600px;
+
+    
    
     
 }
@@ -114,15 +114,17 @@ main{
     flex-basis: 100%;
 }
 .second-nav__item{
+    background-color: rgba(56, 190, 211, 0.131);
     color: rgb(56, 190, 211);
     flex-basis: 25%;
     font-size: 2rem;
     padding: 2.5rem;
     text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.051);
     
 }
 .second-nav__item:hover{
-    background-color: rgba(56, 190, 211, 0.217);
+    background-color: rgba(56, 190, 211, 0.397);
 }
 
 /* subscribe form */
@@ -135,7 +137,7 @@ main{
 .text-form{
     display: flex;
     align-items: center;
-    margin-left: 7rem;
+    
 }
 .fa-envelope{
     font-size: 3.5rem;
@@ -143,13 +145,17 @@ main{
 .text-form p{
     font-size: 1.4rem;
     margin-left: 1.5rem;
+    
 }
 .subscribe form{
     display: flex;
     margin-right: 5rem;
     gap: 1rem;
+    
 }
 .blog-thumb{
+    border: 1px solid rgba(128, 128, 128, 0.321);
+    padding: 1rem;
     height: 14rem;
     width: 100%;
 }
@@ -227,3 +233,171 @@ main{
     font-size: 3.5rem;
     
 }
+
+@media (max-width:1175px){
+    .second-nav__item{
+        padding:0.8rem;
+        margin-bottom: 3.5rem;
+    }
+}
+@media (max-width:999px){
+    .nav-bar-logo{
+        display: flex;
+        flex-basis: 70%;
+        flex-direction: row;
+        margin: 0;
+        margin-bottom: -2rem;
+        justify-content: space-around
+        
+    }
+    .socials{
+        display: none;
+    }
+    .nav-items{
+        display: flex;
+        margin-top: 5rem;
+        gap: 3rem;
+
+    }
+    .Tastemakers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        
+    }
+    .li-text{
+
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper{
+        justify-content: center;
+    }
+    .logo{
+        display: flex;
+        margin-top: 1.5rem;
+        justify-content: flex-start;
+    }
+    .logo-img{
+        margin-left: 0rem;
+        width: 15rem;
+
+    }
+    .text-form p{
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+        
+    }
+    .footer{
+        width: 70%;
+        margin-left: 0
+    }
+}
+
+@media (max-width:767px){
+    .fa-solid{
+        display: none;
+    }
+    .nav-items{
+        margin-left: 0.2rem;
+    }
+    .logo-img{
+        width: 10rem;
+    }
+    .second-nav{
+        display: none;
+    }
+    .form-hr{
+        margin-top: 2rem;
+        border: dashed 1px rgba(128, 128, 128, 0.366);
+    }
+    .subscribe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text-form p{
+        width: 100%;
+    }
+    form{
+        margin-top: 1rem;
+    }
+    input{
+        padding-right: 18rem;
+        
+    }
+    .form-hr__bot{
+        margin-top: 1rem;
+        border: dashed 1px rgba(128, 128, 128, 0.434);
+    }
+    .featured-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .featured-content__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 46%;
+        
+    }
+    h2{
+        width: 90%;
+    }
+
+    .article-p{
+        width: 92%;
+    } 
+}
+    
+@media (max-width:480px){
+    .nav-bar-logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo{
+        order: 1;
+        margin-top: -2rem;
+        
+    }
+    .main-nav{
+        margin-top: -5rem;
+    }
+    .featured-content__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: center;
+        
+    }
+    .blog-thumb{
+        height: 25rem;
+        width: 40rem;
+    }
+    h2{
+        width: 100%;
+    }
+    .subscribe{
+        margin-left: 1rem;
+    }
+    .article-p{
+        width: 100%;
+    } 
+    .date-read{
+        width: 100%;
+    }
+    input{
+        padding-right: 3rem;
+    }
+    .text-form p{
+        line-height: 1.5rem;
+    }
+    .form-hr__bot{
+        margin-top: 2rem;
+    }
+    
+}
+
