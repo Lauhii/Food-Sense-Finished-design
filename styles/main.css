@@ -80,7 +80,12 @@ button.facebook-btn{
     margin-top: 0.7rem;
     color: rgb(56, 190, 211);
 }
-hr{
+.hr-latest{
+    border: 1px dashed rgba(0, 0, 0, 0.128);
+    width: 100%;
+}
+.bottom{
+    width: 80%;
     border: 1px dashed rgba(0, 0, 0, 0.128);
 }
 p{
@@ -91,12 +96,15 @@ p{
 /* main css  */
 
 main{
+    margin-left: -4rem;
     flex-basis: 70%;
     margin-top: 3rem;
 }
 .hero-img{
     width: 100%;
-    height: auto;
+    height: 600px;
+   
+    
 }
 .hero-item{
     display: flex;
@@ -142,7 +150,7 @@ main{
     gap: 1rem;
 }
 .blog-thumb{
-    height: 12rem;
+    height: 14rem;
     width: 100%;
 }
 .featured-content{
@@ -176,4 +184,46 @@ main{
 }
 .date-read a{
     color: rgb(56, 190, 211);
+}
+
+
+/* footer  */
+.footer{
+    width: 90%;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.footer-item p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.footer-good{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.hr-footer{
+    border: 0.5px solid rgba(128, 128, 128, 0.32);
+}
+.footer-item p:not(.copyright){
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+.footer-item a{
+    color: rgb(56, 190, 211);
+}
+.copyright{
+    color: rgba(128, 128, 128, 0.71);
+}
+.footer__social-links{
+    display: flex;
+    gap: 1rem;
+}
+.footer__social-links i{
+    font-size: 3.5rem;
+    
 }
