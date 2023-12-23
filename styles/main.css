@@ -4,46 +4,140 @@
 /* 
 * Add your own CSS code below... 
 */
+
+/* Reset Rem  */
 html{
     font-size: 10px;
 }
 
-/* Container */
-nav.nav-logo{
+/* container background  */
+.wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
 }
-img.logo{
-    order: 1;
-    margin-top: 1.5rem;
+.nav-bar-logo{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 2rem;
 }
-ul.nav-items{
+
+.logo-img{
+    border-radius: 100%;
+    width: 15rem;
+    margin-left: 2rem;
+}
+i{
+    line-height: 5rem;
+    font-size: 1.6rem;
+    font-style:italic;
+}
+.fa-solid{
+    font-size: 3rem;
+    margin-right: 0.4rem;
+}
+.li-text{
+    color: rgb(56, 191, 211);
+}
+.nav-items{
+    margin: 2rem;
+}
+.socials{
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 3rem;
+}
+.social-text ,.social-text2{
+    flex-basis: 100%;
+    text-transform: uppercase;
+}
+.socials{
+    font-size: 1.2rem;
+}
+button{
+    flex-basis: 100%;
+    border: 0.1rem solid;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.fa-facebook , .fa-twitter{
+    font-size: 1.5rem;
+}
+.social-text2{
+    margin-top: 2rem;
+    
+}
+button.twitter-btn{
+    border: rgba(56, 190, 211, 0.326) solid 1px;
+    margin-top: 0.8rem;
+    color: rgb(56, 190, 211);
+}
+button.facebook-btn{
+    border: rgba(56, 190, 211, 0.326) solid 1px;
+    margin-top: 0.7rem;
+    color: rgb(56, 190, 211);
+}
+hr{
+    border: 1px dashed rgba(0, 0, 0, 0.128);
+}
+p{
+    font-size: 0.9rem;
+    width: 70%;
+}
+
+/* main css  */
+
+main{
+    flex-basis: 70%;
+    margin-top: 3rem;
+}
+.hero-img{
+    width: 100%;
+    height: auto;
+}
+.hero-item{
+    display: flex;
+}
+.hero-ul{
     display: flex;
     flex-basis: 100%;
-    justify-content: center;
-    font-size: 1.7rem;
-
 }
-.nav-items li{
-    padding: 1.5rem;
-    color: #0050EE;
+.second-nav__item{
+    color: rgb(56, 190, 211);
+    flex-basis: 25%;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    
 }
-
-hr.nav-bottom-line{
-    flex-basis: 100%;
-    height: 0.1rem;
-    border-color: rgba(0, 0, 0, 0.199);
+.second-nav__item:hover{
+    background-color: rgba(56, 190, 211, 0.217);
 }
 
+/* subscribe form */
 
-
-
-
-
-
-
-
-img.logo{
-    border-radius: 100%;
+.subscribe{
+    display: flex;
+    height: 7rem;
+    align-items: center;
 }
+.text-form{
+    display: flex;
+    align-items: center;
+}
+.fa-envelope{
+    font-size: 4rem;
+}
+.text-form p{
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+}
+.subscribe form{
+    display: flex;
+    margin-right: 5rem;
+    gap: 1rem;
+}
+

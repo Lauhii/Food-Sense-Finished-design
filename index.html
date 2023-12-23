@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav class="nav-logo">
-        <img src="https://via.placeholder.com/140x140/E8117F/fff?text=logo" alt="" class="logo">
-        <ul class="nav-items">
-          <li><a href="">Recipes</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Suppliers</a></li>
-          <li><a href="">Ingredients</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-        <hr class="nav-bottom-line">
-      </nav>
-      <main class="main-content"></main>
-      <footer class="footer"></footer>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://kit.fontawesome.com/18ea69b55f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <nav class="nav-bar-logo" >
+      <div class="logo">
+        <img class="logo-img" src="img/téléchargement.jpg" alt="">
+      </div>
+      <ul class="main-nav">
+        <nav class="nav-items">
+          <li class="Tastemakers">
+            <i class="fa-solid fa-utensils"></i>
+            <i class="li-text"><a href="">Tastemakers</a></i>
+          </li>
+          <li class="Tastemakers">
+            <i class="fa-solid fa-book"></i>
+            <i class="li-text"><a href="">Blog</a></i>
+          </li>
+          <li class="Tastemakers">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <i class="li-text"><a href="">The A-List</a></i>
+
+          </li>
+          <li class="Tastemakers">
+            <i class="fa-solid fa-camera"></i>
+            <i class="li-text"><a href="">Contribute</a></i>
+          </li>
+          <li class="Tastemakers">
+            <i class="fa-solid fa-address-book"></i>
+            
+            <i class="li-text"><a href="">About</a></i>
+          </li>
+          <div class="socials">
+            <h2 class="social-text">Latest tweet<h2>
+            <hr> 
+            <button class="twitter-btn"><i class="fa-brands fa-twitter"></i>Join the conversation</button>
+            <h2 class="social-text2">Let's be friends!<h2>
+            <hr class="bottom">
+            <p>For weekly finds, community recommendations, and more ,like us on facebook.</p>
+            <button class="facebook-btn"><i class="fa-brands fa-facebook"></i>Join the Community</button>
+          </div>
+        </nav>
+
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="hero">
+        <img class=hero-img src="img/varied-vegetables-placed-black-table.jpg" alt="">
+        <nav class="hero-item second-nav">
+          <ul class="hero-ul">
+            <li class="second-nav__item"><a href="">Tastemakers</a></li>
+            <li class="second-nav__item"><a href="">Blog</a></li>
+            <li class="second-nav__item"><a href="">The A-list</a></li>
+            <li class="second-nav__item"><a href="">Contribute</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <div class="subscribe"> 
+          <div class="text-form">
+            <i class="fa-regular fa-envelope"></i></i>
+            <p>Sign up for our newsletter to recieve a handpicked selection of the best stories, recipes, and news. delivered weekly to your inbox. </p>
+          </div>
+          <form>
+            <input placeholder="E-mail" type="text">
+            <button>Subscribe</button>
+          </form>
+        </div>
+        <hr>
+      </div>
+      <div class="featured-content"></div>
+      <div class="hr"></div>
+    </main>
+
+    <footer class="footer"></footer>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+</body>
+
 </html>
