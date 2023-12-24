@@ -15,6 +15,8 @@ html{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 .nav-bar-logo{
     display: flex;
@@ -59,9 +61,9 @@ i{
 }
 button{
     flex-basis: 100%;
-    border: 0.1rem solid;
     padding: 0.6rem;
     border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.574);
 }
 .fa-facebook , .fa-twitter{
     font-size: 1.5rem;
@@ -96,15 +98,11 @@ p{
 /* main css  */
 
 main{
-    flex-basis: 70%;
+    width: 55%;
     margin-top: 3rem;
 }
 .hero-img{
     width: 100%;
-
-    
-   
-    
 }
 .hero-item{
     display: flex;
@@ -195,7 +193,7 @@ main{
 
 /* footer  */
 .footer{
-    width: 90%;
+    width: 75%;
     margin-left: 10rem;
     margin-top: 3rem;
 }
@@ -213,7 +211,10 @@ main{
     margin-top: 2rem;
 }
 .hr-footer{
+    width: 100%;
     border: 0.5px solid rgba(128, 128, 128, 0.32);
+    margin: 0 auto;
+
 }
 .footer-item p:not(.copyright){
     gap: 0.5rem;
@@ -239,16 +240,26 @@ main{
         padding:0.8rem;
         margin-bottom: 3.5rem;
     }
+    .text-form p{
+        width: 100%;
+    }
 }
 @media (max-width:999px){
+    .main{
+        flex-basis: 80%;
+    }
     .nav-bar-logo{
         display: flex;
-        flex-basis: 70%;
+        flex-basis: 80%;
         flex-direction: row;
         margin: 0;
         margin-bottom: -2rem;
-        justify-content: space-around
+        justify-content: space-around;
         
+    }
+    .main-nav{
+        margin: 0;
+        margin-top:1rem;
     }
     .socials{
         display: none;
@@ -256,15 +267,18 @@ main{
     .nav-items{
         display: flex;
         margin-top: 5rem;
-        gap: 3rem;
+        gap: 1.5rem;
 
     }
     .Tastemakers{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+
         
         
+    }
+    .fa-solid{
+        margin: 0 auto;
     }
     .li-text{
 
@@ -272,18 +286,15 @@ main{
         width: 100%;
         text-align: center;
     }
-    .wrapper{
-        justify-content: center;
-    }
+    
     .logo{
         display: flex;
         margin-top: 1.5rem;
         justify-content: flex-start;
     }
     .logo-img{
-        margin-left: 0rem;
         width: 15rem;
-
+        height: 15rem;
     }
     .text-form p{
         font-size: 1.2rem;
@@ -291,24 +302,33 @@ main{
         
     }
     .footer{
-        width: 70%;
+        width: 80%;
         margin-left: 0
     }
 }
 
 @media (max-width:767px){
+    .main{
+        width: 85%;
+    }
     .fa-solid{
         display: none;
     }
     .nav-items{
-        margin-left: 0.2rem;
+        display: flex;
+        margin-top: 4rem;
     }
     .logo-img{
-        width: 10rem;
+        height: 12rem;
+        width: 12rem;
     }
     .second-nav{
         display: none;
     }
+    .nav-bar-logo{
+        justify-content: space-evenly;
+    }
+
     .form-hr{
         margin-top: 2rem;
         border: dashed 1px rgba(128, 128, 128, 0.366);
@@ -324,7 +344,7 @@ main{
         margin-top: 1rem;
     }
     input{
-        padding-right: 18rem;
+        padding-right: 12rem;
         
     }
     .form-hr__bot{
@@ -361,10 +381,16 @@ main{
     .logo{
         order: 1;
         margin-top: -2rem;
+        margin-right: 2rem;
+        
+    }
+    .nav-items{
+        gap: 4rem;
+        padding: 1rem;
         
     }
     .main-nav{
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
     .featured-content__item{
         display: flex;
@@ -375,7 +401,7 @@ main{
     }
     .blog-thumb{
         height: 25rem;
-        width: 40rem;
+        width: 100%;
     }
     h2{
         width: 100%;
@@ -397,6 +423,15 @@ main{
     }
     .form-hr__bot{
         margin-top: 2rem;
+    }
+    .footer-item p:not(.copyright){
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    .footer-item a{
+        width: 100%;
     }
     
 }
